@@ -25,13 +25,13 @@ public class BaseAudit {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "created_date", nullable = false, updatable = false)
+    @Column(name = "date_created", nullable = false, updatable = false)
     @CreatedDate
-    private LocalDateTime createdDate;
+    private LocalDateTime dateCreated;
 
-    @Column(name = "updated_date")
+    @Column(name = "last_updated")
     @LastModifiedDate
-    private LocalDateTime updatedDate;
+    private LocalDateTime lastUpdated;
 
     @Column(name = "active")
     private boolean active;
